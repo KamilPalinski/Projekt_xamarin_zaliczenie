@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProjektZaliczenie"
+             x:Class="ProjektZaliczenie.MainPage"
+             BackgroundColor="Black"
+             Title="Komis CebulaDeal">
+    <ContentPage.Content>
+        <Grid Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="200"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Source="logo.png" 
+               Grid.Row="0"  
+               Margin="10" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center"></Image>
+            <Label Text="Komis samochodowy CebulaDeal" 
+               Grid.Row="1"
+               FontSize="Large" 
+               TextColor="White"
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center"></Label>
+            <Button Text="Zapraszamy !" 
+                HorizontalOptions="Center" 
+                VerticalOptions="Start" 
+                BackgroundColor="#ff2800" 
+                Grid.Row="3"
+                TextColor="White"
+                Clicked="Button_Clicked"/>
+            <Label Text="Created by Kamil Paliński nr albumu 11327" 
+               Grid.Row="4"
+               FontSize="Small" 
+               TextColor="White"
+               ></Label>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

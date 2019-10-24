@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektZaliczenie.QuestionView"
+            >
+    <StackLayout>
+        <Image Source="logo.png" Style="{StaticResource SmallLogoImageStyle}"></Image>
+        <Label Text="Wyslij nam wiadomość" Style="{StaticResource TitleLabelStyle}"></Label>
+        <Editor>
+            <Editor.Keyboard>
+                <Keyboard x:FactoryMethod="Create">
+                    <x:Arguments>
+                        <KeyboardFlags>Suggestions,CapitalizeCharacter</KeyboardFlags>
+                    </x:Arguments>
+                </Keyboard>
+            </Editor.Keyboard>
+        </Editor>
+        <StackLayout Orientation="Horizontal">
+            <Entry Text="Wpisz swoj nr telefonu" Placeholder="Nr tel" Keyboard="Telephone"/>
+            <Label Text="Zadzwonić do ciebie?"></Label>
+            <Switch x:Name="ContactMeSwitch"  Toggled="ContactMeSwitch_Toggled"></Switch>
+        </StackLayout>
+        <Button Text="Send"  x:Name="SendMessageButton" Clicked="SendMessageButton_Clicked_1" ></Button>
+    </StackLayout>
+</ContentPage>

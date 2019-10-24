@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektZaliczenie.Settings"
+             BackgroundColor="Black"
+             Title="Opcje">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Label Text="Opcje" TextColor="White" Grid.Row="0"  FontSize="Large"   HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+        <Picker x:Name="LanguagePickerFromXaml" TitleColor="White" Grid.Row="1"  HorizontalOptions="Center" Title="Nacisnij aby wybrać język"  >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>English</x:String>
+                    <x:String>Dutch</x:String>
+                    <x:String>French</x:String>
+                    <x:String>German</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Button x:Name="SaveSettingsButton"  Clicked="SaveSettingsButton_OnClicked" Text="Zapisz" HorizontalOptions="Center" VerticalOptions="Start" BackgroundColor="#22cfa7" Grid.Row="2" Grid.ColumnSpan="2" TextColor="White"></Button>
+        <ActivityIndicator x:Name="SavingActivityIndicator" Grid.Row="2"  Color="#22cfa7" IsRunning="False"></ActivityIndicator>
+    </Grid>
+</ContentPage>
+
+

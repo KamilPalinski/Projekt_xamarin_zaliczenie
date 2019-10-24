@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProjektZaliczenie;assembly=ProjektZaliczenie"
+             xmlns:local1="clr-namespace:ProjektZaliczenie"
+             x:Class="ProjektZaliczenie.StartView"
+             BackgroundColor="Black">
+    <MasterDetailPage.Master>
+        <local:MasterPageNavigationListView x:Name="MasterView"></local:MasterPageNavigationListView>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <local1:MainView></local1:MainView>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

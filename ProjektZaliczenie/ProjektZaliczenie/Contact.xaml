@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektZaliczenie.Contact"
+             BackgroundColor="Black"
+             Title="Kontakt">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Source="logo.png" Grid.Row="0" Style="{StaticResource SmallLogoImageStyle}"/>
+        <Label Text="Cebula Deal" Grid.Row="1" Style="{StaticResource LabelText}"/>
+        <ImageButton Source="maps.png"
+                     Grid.Row="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                     Clicked="TapGestureRecognizer_Tapped"/>
+        <Label Text="Adres : Poniedzialkowy Dol 1 30-231 Krakow" Grid.Row="3" Style="{StaticResource LabelText}"/>
+        <Label Text="Nr kontaktowy : 888-888-888" Grid.Row="4" Style="{StaticResource LabelText}"/>
+
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjektZaliczenie.App">
+    <Application.Resources>
+        <Style x:Key="SmallLogoImageStyle" TargetType="Image">
+            <Setter Property="HeightRequest" Value="100"></Setter>
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            <Setter Property="Margin" Value="10"></Setter>
+        </Style>
+        <Style x:Key="TitleLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="Large"></Setter>
+            <Setter Property="FontAttributes" Value="Bold"></Setter>
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+        </Style>
+
+        <Style x:Key="LogoImageStyle" TargetType="Image">
+            <Setter Property="Margin" Value="10"></Setter>
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+        </Style>
+
+        <Style x:Key="EditorStyle" TargetType="Editor">
+            <Setter Property="HeightRequest" Value="200"></Setter>
+            <Setter Property="TextColor" Value="Black"></Setter>
+            <Setter Property="FontSize" Value="Small"></Setter>
+            <Setter Property="IsSpellCheckEnabled" Value="True"></Setter>
+            <Setter Property="MaxLength" Value="500"></Setter>
+        </Style>
+
+
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="Medium"></Setter>
+            <Setter Property="HorizontalOptions" Value="Start"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+            <Setter Property="TextColor" Value="DarkGray"></Setter>
+        </Style>
+        <Style x:Key="LabelText" TargetType="Label">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+
+        <Style x:Key="BaseLabelStyle" TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="Start"></Setter>
+            <Setter Property="VerticalOptions" Value="Center"></Setter>
+            <Setter Property="TextColor" Value="DarkGray"></Setter>
+        </Style>
+
+        <Style x:Key="SmallLabelStyle" TargetType="Label" 
+                   BasedOn="{StaticResource BaseLabelStyle}">
+            <Setter Property="FontSize" Value="Small"></Setter>
+        </Style>
+
+        <Style x:Key="MediumLabelStyle" TargetType="Label" 
+                   BasedOn="{StaticResource BaseLabelStyle}">
+            <Setter Property="FontSize" Value="Medium"></Setter>
+        </Style>
+
+    </Application.Resources>
+</Application>
